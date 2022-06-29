@@ -1,0 +1,19 @@
+Compilação/Execução:
+
+-> Cod Sequencial:
+    Para compilar:
+        g++ strassen-serial.cpp -o strassen-serial
+    Para executar:
+        ./strassen-serial
+
+-> Cod Paralelo MPI:
+    Para compilar:
+        mpicxx strassen-mpi.cpp -o strassen-mpi -lm
+    Para executar:
+        mpiexec -n 8 --use-hwthread-cpus strassen-mpi
+
+-> Cod Paralelo OpenMP:
+    Para compilar:
+        g++ -fopenmp strassen-openmp.cpp -o strassen-openmp
+    Para executar:
+        ./strassen-openmp
